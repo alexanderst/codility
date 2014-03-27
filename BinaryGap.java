@@ -1,8 +1,6 @@
 public class BinaryGap {
     
-
     public static int Solution(int N) {
-
         int max = 0, cnt = 0, trailing = 1;
         String binaryRepr = Integer.toBinaryString(N);                
         for (int i = binaryRepr.length() - 1; i >= 0 ; --i) {              
