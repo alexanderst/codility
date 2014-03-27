@@ -11,6 +11,6 @@ public class BinaryTree {
             left_size = 1 + solution(T.l);
         if (null != T.r)
             right_size = 1 + solution(T.r);           
-        return Math.max(left_size, right_size);
+        return left_size > right_size ? left_size : right_size;
     }
 }
